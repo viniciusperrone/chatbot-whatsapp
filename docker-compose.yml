@@ -1,8 +1,10 @@
+version: '3.8'
+
 services:
   waha:
     image: devlikeapro/waha
     container_name: wpp_bot_waha
-    # restart: always
+    restart: always
     ports:
       - "3000:3000"
 
