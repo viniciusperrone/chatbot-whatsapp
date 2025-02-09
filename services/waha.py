@@ -1,5 +1,4 @@
 import os
-import time
 import requests
 from dotenv import load_dotenv
 
@@ -20,17 +19,11 @@ class Waha:
             'Content-Type': 'application/json'
         }
 
-        get_custom_message = self.generate_custom_message(message)
-
-        time.sleep(4)
-
         payload = {
             'session': 'default',
             'chatId': chat_id,
-            'text': get_custom_message
+            'text': message
         }
-
-        print('payload', payload)
 
         try:
             response = requests.post(url, json=payload, headers=headers)
