@@ -25,6 +25,8 @@ class Waha:
             'text': message
         }
 
+        print('payload', payload)
+
         try:
             response = requests.post(url, json=payload, headers=headers)
 
