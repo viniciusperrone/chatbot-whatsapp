@@ -30,7 +30,6 @@ if __name__ == 'main':
         embedding_function=embedding,
         persist_directory=persist_directory
     )
-
-    
-
-
+    vector_store.add_documents(
+        documents=chunks
+    )
