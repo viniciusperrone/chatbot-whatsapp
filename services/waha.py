@@ -37,6 +37,20 @@ class Waha:
         except requests.exceptions.RequestException as e:
             print(f"Erro ao enviar mensagem: {e}")
             return None
+        
+    def get_history_messages(self, chat_id, limit):
+        url = f'{self.__api_url}/api/default/chats/{chat_id}/messages?limit={limit}&downloadMedia=false'
+
+        headers = {
+            'Content-Type': 'application/json'
+        }
+
+        response = requests.get(
+            url=url,
+            headers=headers
+        )
+
+        return response.json()
     
     def start_typing(self, chat_id):
         url = f'{self.__api_url}/api/startTyping'
