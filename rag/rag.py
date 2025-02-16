@@ -10,7 +10,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 os.environ['HUGGINGFACE_API_KEY'] = config('HUGGINGFACE_API_KEY')
 
 if __name__ == 'main':
-    file_path = '/app/rag/data/django_master.pdf'
+    file_path = '/app/rag/data/CV_VINICIUS_PERRONE_2024.pdf'
     loader = PyPDFLoader(file_path)
     docs = loader.load()
 
