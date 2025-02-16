@@ -72,7 +72,7 @@ class AIBot:
         document_chain = create_stuff_documents_chain(self.__chat, question_answering_prompt)
         response = document_chain.invoke(
             {
-                'content': docs,
+                'context': docs,
                 'messages': self.__build_messages(history_messages, question)
             }
         )
