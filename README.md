@@ -2,6 +2,10 @@
 Chatbot de Whatsapp com Integração com IA. O projeto inclui também a aplicação de contexto 
 ao nossa IA para contextualizar nosso modelo, essa estratégia é conhecida como RAG, ou <i>Retrieval-augmented generation</i>
 
+<p align="center">
+    <img src="/images/arquitetura_projeto.webp" alt="Logo">
+</p>
+
 # 🛠️ Tecnologias Envolvidas
 
 - Flask: Webhook para manipular eventos de mensagens.
