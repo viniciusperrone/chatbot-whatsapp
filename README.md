@@ -15,9 +15,9 @@ ao nossa IA para contextualizar nosso modelo, essa estratégia é conhecida como
 
 # 🚀 Rodar Projeto
 
-Para rodar aplicação você deve seguir os seguintes passos:
+Para rodar aplicação, você deve seguir os seguintes passos:
 
-- Subi os containers da aplicação
+- Subir os containers da aplicação
 ```bash
 $ docker-compose up -d --build
 ```
