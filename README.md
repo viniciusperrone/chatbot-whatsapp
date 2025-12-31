@@ -10,8 +10,8 @@ ao nossa IA para contextualizar nosso modelo, essa estratégia é conhecida como
 
 - Flask: Webhook para manipular eventos de mensagens.
 - Waha: Integração com Whatsapp
-- Python
-- LangChain
+- Python: Linguagem de Programção
+- LangChain: Framework para criação e manipulação de modelos LLMs
 
 # 🚀 Rodar Projeto
 
